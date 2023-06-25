@@ -1,5 +1,5 @@
 import React from 'react'
-import { TouchableOpacity, View, Text, StyleSheet, TouchableNativeFeedback } from 'react-native';
+import { TouchableOpacity, View, Text, StyleSheet, TouchableNativeFeedback, Platform } from 'react-native';
 
 interface Props {
     title: string;
@@ -9,33 +9,48 @@ interface Props {
 
 
 export const Fab = ({ title, onPress, position = 'br' }: Props) => {
-    return (
-        <View style={[
-            (position === 'bl')
-                ? style.botonFlotanteLocationLeft
-                : style.botonFlotanteLocationright
-        ]}>
-            <TouchableNativeFeedback onPress={onPress}
-                background={TouchableNativeFeedback.Ripple('#4d5155', false, 32)}
-            >
+    // para sistema operativo de ios 
+    const io = () => {
+        return (
+            <TouchableOpacity
+                onPress={onPress}
+                activeOpacity={0.72}
+                style={[
+                    (position === 'bl')
+                        ? style.botonFlotanteLocationLeft
+                        : style.botonFlotanteLocationright
+                ]}>
                 <View style={style.botonFlotante}>
                     <Text style={style.botonFlotantetext}>
                         {title}
                     </Text>
                 </View>
-            </TouchableNativeFeedback>
-        </View>
+            </TouchableOpacity>
+        )
+    }
 
-        // <TouchableOpacity onPress={() => setBoton(boton - 1)} style={style.botonFlotanteLocationLeft}>
+    // para sistema operativo de Android 
 
-        //         <View style={style.botonFlotante}>
-        //             <Text style={style.botonFlotantetext}>
-        //                 -1
-        //             </Text>
-        //         </View>
-
-        //     </TouchableOpacity>
-    )
+    const android = () => {
+        return (
+            <View style={[
+                (position === 'bl')
+                    ? style.botonFlotanteLocationLeft
+                    : style.botonFlotanteLocationright
+            ]}>
+                <TouchableNativeFeedback onPress={onPress}
+                    background={TouchableNativeFeedback.Ripple('#4d5155', false, 32)}
+                >
+                    <View style={style.botonFlotante}>
+                        <Text style={style.botonFlotantetext}>
+                            {title}
+                        </Text>
+                    </View>
+                </TouchableNativeFeedback>
+            </View>
+        )
+    }
+    return (Platform.OS === 'ios') ? io() : android();
 }
 
 const style = StyleSheet.create({
