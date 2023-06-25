@@ -15,31 +15,32 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#28C4D9',
-        // flexDirection: 'row',
-        justifyContent: 'space-between'
+        flexDirection: 'row',
+        justifyContent: 'flex-end',
+        alignItems: 'flex-end'
 
 
     },
 
     caja1: {
-        width: 100,
-        height: 100,
+        width: 70,
+        height: 40,
         borderWidth: 2,
         borderColor: 'white',
-        fontSize: 30
+        fontSize: 20
     },
     caja2: {
-        width: 100,
-        height: 100,
+        width: 70,
+        height: 40,
         borderWidth: 2,
         borderColor: 'white',
-        fontSize: 30
+        fontSize: 20
     },
     caja3: {
-        width: 100,
-        height: 100,
+        width: 70,
+        height: 40,
         borderWidth: 2,
         borderColor: 'white',
-        fontSize: 30
+        fontSize: 20
     }
 });
