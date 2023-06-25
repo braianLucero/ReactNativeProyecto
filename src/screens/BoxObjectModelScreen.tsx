@@ -3,14 +3,14 @@ import { Text, View, StyleSheet } from 'react-native';
 
 export const BoxObjectModelScreen = () => {
     return (
-        <View style={styles.container}>
+        <View style={styles.contenedor}>
             <Text style={styles.title}>BoxObjectModel</Text>
         </View>
     )
 }
 
 const styles = StyleSheet.create({
-    container: {
+    contenedor: {
         flex: 1,
         backgroundColor: 'orange',
         justifyContent: 'center',
