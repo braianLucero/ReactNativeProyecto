@@ -7,6 +7,22 @@ export const FlexScreen = () => {
             <Text style={styles.caja1}>caja 1 </Text>
             <Text style={styles.caja2}>caja 2 </Text>
             <Text style={styles.caja3}>caja 3 </Text>
+            <Text style={styles.caja1}>caja 1 </Text>
+            <Text style={styles.caja2}>caja 2 </Text>
+            <Text style={styles.caja3}>caja 3 </Text>
+            <Text style={styles.caja1}>caja 1 </Text>
+            <Text style={styles.caja2}>caja 2 </Text>
+            <Text style={styles.caja3}>caja 3 </Text>
+            <Text style={styles.caja1}>caja 1 </Text>
+            <Text style={styles.caja2}>caja 2 </Text>
+            <Text style={styles.caja3}>caja 3 </Text>
+            <Text style={styles.caja1}>caja 1 </Text>
+            <Text style={styles.caja2}>caja 2 </Text>
+            <Text style={styles.caja3}>caja 3 </Text>
+            <Text style={styles.caja1}>caja 1 </Text>
+            <Text style={styles.caja2}>caja 2 </Text>
+            <Text style={styles.caja3}>caja 3 </Text>
+
         </View>
     )
 }
@@ -15,10 +31,10 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#28C4D9',
+        alignItems: 'center',
+        flexWrap: 'wrap',
         flexDirection: 'row',
-        // justifyContent: 'flex-end',
-        // alignItems: 'flex-end'
-
+        justifyContent: 'center',
 
     },
 
@@ -28,7 +44,7 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderColor: 'white',
         fontSize: 20,
-        alignSelf: 'center'
+        // alignSelf: 'center'
 
     },
     caja2: {
@@ -44,6 +60,6 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderColor: 'white',
         fontSize: 20,
-        alignSelf: 'flex-end'
+        // alignSelf: 'flex-end'
     }
 });
