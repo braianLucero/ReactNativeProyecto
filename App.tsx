@@ -1,24 +1,10 @@
-import React from 'react'
-import { Text, View } from 'react-native';
+import React from 'react';
+import { ContadorScreen } from './src/screens/ContadorScreen';
+
 
 const App = () => {
   return (
-    <View style={{
-      flex: 1,
-      backgroundColor: "#f2f2f2",
-      justifyContent: "center"
-
-    }}>
-
-      <Text style={{
-        fontSize: 25,
-        textAlign: 'center'
-      }}> Hola Mundo !!</Text>
-
-    </View >
-  )
-}
-
-
-
+    <ContadorScreen />
+  );
+};
 export default App;
