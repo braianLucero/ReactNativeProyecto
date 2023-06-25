@@ -6,15 +6,18 @@ export const PositionScreen = () => {
         <View style={styles.container}>
             <View style={styles.cajaMorada} />
             <View style={styles.cajaNaranja} />
+            <View style={styles.cajaVerde} />
         </View>
     )
 }
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        // flex: 1,
+        width: 400,
+        height: 300,
         backgroundColor: '#28C4D9',
-        justifyContent: 'center',
-        alignItems: 'center'
+        // justifyContent: 'center',
+        // alignItems: 'center'
 
     },
     cajaMorada: {
@@ -23,6 +26,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#a120c1',
         borderWidth: 10,
         borderColor: 'white',
+        position: 'absolute',
+        top: 0,
+        right: 0
 
     },
     cajaNaranja: {
@@ -31,6 +37,18 @@ const styles = StyleSheet.create({
         backgroundColor: '#c15d20',
         borderWidth: 10,
         borderColor: 'white',
-
+        position: 'absolute',
+        bottom: 0,
+        right: 0
+    },
+    cajaVerde: {
+        backgroundColor: 'green',
+        width: 100,
+        height: 100,
+        borderWidth: 10,
+        borderColor: 'white',
+        position: 'absolute',
+        bottom: 0,
+        left: 0
     }
 });
