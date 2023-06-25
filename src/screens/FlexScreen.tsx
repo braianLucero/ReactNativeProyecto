@@ -14,25 +14,30 @@ export const FlexScreen = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#28C4D9'
+        backgroundColor: '#28C4D9',
+        flexDirection: 'row'
+
     },
 
     caja1: {
-        flex: 4,
+        width: 100,
+        height: 100,
         borderWidth: 2,
         borderColor: 'white',
-        fontSize: 40
+        fontSize: 30
     },
     caja2: {
-        flex: 4,
+        width: 100,
+        height: 100,
         borderWidth: 2,
         borderColor: 'white',
-        fontSize: 40
+        fontSize: 30
     },
     caja3: {
-        flex: 2,
+        width: 100,
+        height: 100,
         borderWidth: 2,
         borderColor: 'white',
-        fontSize: 40
+        fontSize: 30
     }
 });
