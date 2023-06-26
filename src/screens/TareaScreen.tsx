@@ -22,10 +22,12 @@ const styles = StyleSheet.create({
     },
     cajaMorada: {
         width: 100,
-        height: 100,
+        height: 200,
         borderWidth: 10,
         borderColor: 'white',
-        backgroundColor: '#5856D6'
+        backgroundColor: '#5856D6',
+        position: 'absolute',
+
     },
     cajaNaranja: {
         width: 100,
