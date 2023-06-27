@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, Text } from 'react-native';
 import { styles } from '../theme/appThem';
+import { BotonCalc } from '../Components/BotonCalc';
 
 export const CalculadoraScreen = () => {
     return (
@@ -8,15 +9,14 @@ export const CalculadoraScreen = () => {
             <Text style={styles.resultadoPequenio}>1,500.00 </Text>
             <Text style={styles.resultado}>1,500.00 </Text>
 
-            <View>
+            <View style={styles.fila}>
 
-                <View style={styles.boton} >
-                    <Text style={styles.botonTexto}>1</Text>
-                </View>
+                <BotonCalc texto='C' color='#9c9a9c' />
+                <BotonCalc texto='+/-' color='#9c9a9c' />
+                <BotonCalc texto='del' color='#9c9a9c' />
+                <BotonCalc texto='/' color='#FF9427' />
 
             </View>
-
-
         </View>
     )
 }
