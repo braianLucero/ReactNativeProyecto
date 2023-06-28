@@ -17,20 +17,28 @@ export const CalculadoraScreen = () => {
         if (numero.includes('.') && numeroTexto === '.') return;
 
         if (numero.startsWith('0') || numero.startsWith('-0')) {
+
+            //punto decimal 
             if (numeroTexto === '.') {
                 setNumero(numero + numeroTexto);
 
+                //evalua si es otro cero , y hay un punto 
             } else if (numeroTexto === '0' && numero.includes('.')) {
-                setNumero(numero + numeroTexto)
+                setNumero(numero + numeroTexto);
+
+                //evalua si es diferente de cero y no tiene un punto 
             } else if (numeroTexto !== '0' && !numero.includes('.')) {
                 setNumero(numeroTexto)
-            } else if (numeroTexto === '0' && !numeroTexto.includes('.')) {
+
+                // evitar el 0000.0
+            } else if (numeroTexto === '0 ' && !numero.includes('.')) {
                 setNumero(numero)
             } else {
                 setNumero(numero + numeroTexto)
             }
-        }
-        else {
+
+
+        } else {
             setNumero(numero + numeroTexto)
         }
 
@@ -38,11 +46,39 @@ export const CalculadoraScreen = () => {
 
     const positivoNegativo = () => {
         if (numero.includes('-')) {
-            setNumero(numero.replace('-', ''));
+            setNumero(numero.replace('-', ''))
         } else {
             setNumero('-' + numero);
         }
     }
+
+
+
+
+    const btnDelete = () => {
+        let negativo = '';
+        let numeroTemp = numero;
+        if (numero.includes('-')) {
+            negativo = '-';
+            numeroTemp = numero.substr(1);
+        }
+        if (numeroTemp.length > 1) {
+            setNumero(numeroTemp.slice(0, -1));
+        } else {
+            setNumero('0')
+        }
+
+
+        // if (numero.length === 1) {
+        //     setNumero('0');
+        // } else {                                          <----- otra forma de hacerlo 
+        //     setNumero(numero.slice(0, -1));
+        // }
+
+    }
+
+
+
 
     return (
         <View style={styles.calculadoraContainer}>
@@ -59,7 +95,7 @@ export const CalculadoraScreen = () => {
             <View style={styles.fila}>
                 <BotonCalc texto='C' color='#9B9B9B' accion={limpiar} />
                 <BotonCalc texto='+/-' color='#9B9B9B' accion={positivoNegativo} />
-                <BotonCalc texto='del' color='#9B9B9B' accion={limpiar} />
+                <BotonCalc texto='del' color='#9B9B9B' accion={btnDelete} />
                 <BotonCalc texto='/' color='#FF9427' accion={limpiar} />
             </View>
 
