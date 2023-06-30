@@ -4,6 +4,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { MenuLateralBasico } from './src/Navigator/MenuLateralBasico';
 // import { StackNavigator } from './src/Navigator/StackNavigator';
 
+
+// resetear la cache (npx react-native start --reset-cache) 
 const App = () => {
   return (
     <NavigationContainer>
