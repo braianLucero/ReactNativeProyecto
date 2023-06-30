@@ -32,7 +32,17 @@ export const styles = StyleSheet.create({
         height: 150,
         borderRadius: 100,
 
-    }
+    },
+    menuContainer: {
+        marginVertical: 20,
+        marginHorizontal: 50,
+    },
+    menuBtn: {
+        marginVertical: 10
+    },
+    menutexto: {
+        fontSize: 20,
+    },
 
 
 });
