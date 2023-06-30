@@ -21,6 +21,18 @@ export const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 20,
         color: 'white'
+    },
+    avatarContainer: {
+        alignItems: 'center',
+        marginTop: 10,
+
+    },
+    avatar: {
+        width: 150,
+        height: 150,
+        borderRadius: 100,
+
     }
+
 
 });
