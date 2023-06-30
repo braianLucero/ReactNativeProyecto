@@ -7,9 +7,7 @@ const Drawer = createDrawerNavigator();
 
 export const MenuLateralBasico = () => {
     return (
-        <Drawer.Navigator
-            drawerPosition="right"
-        >
+        <Drawer.Navigator>
             <Drawer.Screen name="StackNavigator" component={StackNavigator} />
             <Drawer.Screen name="SettingsScreen" component={SettingsScreen} />
         </Drawer.Navigator>
