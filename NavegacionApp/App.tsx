@@ -7,12 +7,10 @@ import { MenuLateralBasico } from './src/Navigator/MenuLateralBasico';
 const App = () => {
   return (
     <NavigationContainer>
-
       {/* <StackNavigator /> */}
       <MenuLateralBasico />
-
     </NavigationContainer>
   )
 }
 
-export default App;
+export default App

@@ -4,7 +4,7 @@ import { View, Text } from 'react-native';
 export const SettingsScreen = () => {
     return (
         <View>
-            <Text>SettingsScreen</Text>
+            <Text>que onda bobo </Text>
         </View>
     )
 }

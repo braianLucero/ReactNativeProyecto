@@ -9,7 +9,7 @@ import { StackScreenProps } from '@react-navigation/stack';
 // }
 
 
-interface Props extends StackScreenProps<RootStackParams, 'PersonaScreen '> { };
+interface Props extends StackScreenProps<any, any> { };
 
 export const PersonaScreen = ({ route }: Props) => {
     // const params = route.params as RouterParams;
