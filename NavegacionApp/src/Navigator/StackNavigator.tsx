@@ -4,7 +4,16 @@ import { Pagina2Screen } from '../Screen/Pagina2Screen';
 import { Pagina3Screen } from '../Screen/Pagina3Screen';
 import { PersonaScreen } from '../Screen/PersonaScreen';
 
-const Stack = createStackNavigator();
+
+export type RootStackParams = {
+    Pagina1Screen: undefined,
+    Pagina2Screen: undefined,
+    Pagina3Screen: undefined,
+    PersonaScreen: { id: number, nombre: string },
+}
+
+
+const Stack = createStackNavigator<RootStackParams>();
 
 export const StackNavigator = () => {
     return (
@@ -25,6 +34,9 @@ export const StackNavigator = () => {
             <Stack.Screen name="Pagina2Screen" options={{ title: ' Pagina 2  ' }} component={Pagina2Screen} />
             <Stack.Screen name="Pagina3Screen" options={{ title: ' pagina 3 ' }} component={Pagina3Screen} />
             <Stack.Screen name="PersonaScreen" component={PersonaScreen} />
+
+
+
         </Stack.Navigator >
     );
 }

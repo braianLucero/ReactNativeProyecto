@@ -3,9 +3,16 @@ import { View, Text } from 'react-native';
 import { styles } from '../theme/appTheme';
 import { StackScreenProps } from '@react-navigation/stack';
 
-interface Props extends StackScreenProps<any, any> { };
+// interface RouterParams {
+//     id: number;
+//     nombre: string
+// }
+
+
+interface Props extends StackScreenProps<RootStackParams, 'PersonaScreen '> { };
 
 export const PersonaScreen = ({ route }: Props) => {
+    // const params = route.params as RouterParams;
     const params = route.params;
     return (
         <View style={styles.globalMargin}>
