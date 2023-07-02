@@ -1,8 +1,8 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { Pantalla1Screen } from '../Screens/Pantalla1Screen';
-import { Pantalla2Screen } from '../Screens/Pantalla2Screen ';
-import { Pantalla3Screen } from '../Screens/Pantalla3Screen ';
+import { Pantalla1Screen } from '../Screens/Screens/Pantalla1Screen';
+import { Pantalla2Screen } from '../Screens/Screens/Pantalla2Screen ';
+import { Pantalla3Screen } from '../Screens/Screens/Pantalla3Screen ';
 
 const Stack = createStackNavigator();
 

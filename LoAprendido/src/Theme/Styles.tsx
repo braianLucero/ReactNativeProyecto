@@ -23,5 +23,15 @@ export const styles = StyleSheet.create({
     textNavigation: {
         fontSize: 25,
         color: 'white',
+    },
+    drawerCont: {
+        // backgroundColor: 'red',
+        color: 'blak',
+        width: 250,
+        alignSelf: 'center'
+    },
+    textDrawer: {
+        color: 'black',
+        fontSize: 20
     }
 });

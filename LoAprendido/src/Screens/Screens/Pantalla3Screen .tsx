@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text, TouchableOpacity } from 'react-native';
-import { styles } from '../Theme/Styles';
+import { styles } from '../../Theme/Styles';
 import { StackScreenProps } from '@react-navigation/stack';
 
 interface Props extends StackScreenProps<any, any> { }
