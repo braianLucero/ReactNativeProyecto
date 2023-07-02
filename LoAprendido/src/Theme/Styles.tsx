@@ -15,13 +15,13 @@ export const styles = StyleSheet.create({
     contNavigation: {
         backgroundColor: 'black',
         width: 70,
-        marginTop: 20,
+        marginTop: 10,
         borderRadius: 5
 
 
     },
     textNavigation: {
-        fontSize: 30,
+        fontSize: 25,
         color: 'white',
     }
 });

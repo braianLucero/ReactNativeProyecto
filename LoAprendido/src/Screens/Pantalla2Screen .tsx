@@ -1,24 +1,24 @@
 import React from 'react'
 import { View, Text, TouchableOpacity } from 'react-native';
 import { styles } from '../Theme/Styles';
-import { StackScreenProps } from '@react-navigation/stack';
+import { useNavigation } from '@react-navigation/core';
 
 
-interface Props extends StackScreenProps<any, any> { }
-export const Pantalla1Screen = ({ navigation }: Props) => {
+export const Pantalla2Screen = () => {
+    const navigation = useNavigation();  // otra forma de traer el navigation 
     return (
         <View style={styles.Contedor}>
 
             <View>
-                <Text style={styles.textPrincipal}>Pagina Principal </Text>
+                <Text style={styles.textPrincipal}>Estas en Screen 2  </Text>
             </View>
 
             <View>
                 <TouchableOpacity style={styles.contNavigation}
-                    onPress={() => navigation.navigate('Pantalla2Screen')}
+                    onPress={() => navigation.navigate('Pantalla3Screen')}
                 >
                     <Text style={styles.textNavigation}>
-                        Pag2
+                        Pag3
                     </Text>
                 </TouchableOpacity>
             </View>
