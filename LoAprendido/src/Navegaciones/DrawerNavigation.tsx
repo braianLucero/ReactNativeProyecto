@@ -43,6 +43,10 @@ const CustomDrawerContent = ({ navigation }: DrawerContentComponentProps<DrawerC
                     label="DrawerScreen"
                     onPress={() => navigation.navigate('DrawerScreen')}
                 />
+                <DrawerItem
+                    label="Tabs"
+                    onPress={() => navigation.navigate('Tabs')}
+                />
                 {/* ...otros elementos del menú */}
             </DrawerContentScrollView>
         </View>
