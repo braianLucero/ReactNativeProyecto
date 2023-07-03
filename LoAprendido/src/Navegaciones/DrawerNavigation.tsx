@@ -3,6 +3,7 @@ import { createDrawerNavigator, DrawerContentScrollView, DrawerItem, DrawerConte
 import { StackNavigation } from './StackNavigation';
 import { DrawersScreen } from '../Screens/Screens/Drawers/DrawersScreen';
 import { View, Image } from 'react-native';
+import { Tabs } from './TabsNavigation';
 
 const Drawer = createDrawerNavigator();
 
@@ -13,6 +14,7 @@ export const DrawerNavigation = () => {
         >
             <Drawer.Screen name="StackNavigation" component={StackNavigation} />
             <Drawer.Screen name="DrawerScreen" component={DrawersScreen} />
+            <Drawer.Screen name="Tabs" component={Tabs} />
         </Drawer.Navigator>
     );
 }
