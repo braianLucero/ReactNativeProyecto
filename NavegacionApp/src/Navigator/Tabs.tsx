@@ -5,6 +5,8 @@ import { Tabs1Screen } from '../Screen/Tabs1Screen';
 import { Tabs3Screen } from '../Screen/Tabs3Screen ';
 import { Tabs2Screen } from '../Screen/Tabs2Screen';
 
+
+
 const Tab = createBottomTabNavigator();
 
 export const Tabs = () => {

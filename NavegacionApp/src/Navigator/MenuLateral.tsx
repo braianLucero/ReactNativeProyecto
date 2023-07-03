@@ -1,8 +1,7 @@
 import React from 'react';
 import { createDrawerNavigator, DrawerContentComponentProps, DrawerContentScrollView, DrawerContentOptions } from '@react-navigation/drawer';
 import { SettingsScreen } from '../Screen/SettingsScreen';
-// import { StackNavigator } from './StackNavigator';
-import { useWindowDimensions, Text, View, Image, TouchableOpacity } from 'react-native'; // Importa Image aquí
+import { Text, View, Image, TouchableOpacity } from 'react-native'; // Importa Image aquí
 import { styles } from '../theme/appTheme';
 import { Tabs } from './Tabs';
 
