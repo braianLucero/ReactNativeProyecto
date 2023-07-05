@@ -1,5 +1,6 @@
 import React from 'react'
 import { Text, View, StyleSheet, TextInput } from 'react-native';
+import Svg, { Path, Defs, LinearGrandient, Stop } from 'react-native-svg';
 export const LoginScreen = () => {
     return (
         <View style={styles.Container}>
