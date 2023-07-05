@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, View, StyleSheet, TextInput, StatusBar } from 'react-native';
+import { Text, View, StyleSheet, TextInput } from 'react-native';
 export const LoginScreen = () => {
     return (
         <View style={styles.Container}>
@@ -16,9 +16,7 @@ export const LoginScreen = () => {
                 style={styles.textInput}
 
             />
-            <StatusBar
-                style='auto'
-            />
+
         </View>
     )
 }
@@ -33,7 +31,7 @@ const styles = StyleSheet.create({
     },
     text: {
         fontSize: 80,
-        color: '#000',
+        color: '#34434D',
         fontWeight: 'bold',
         textAlign: 'center'
 
