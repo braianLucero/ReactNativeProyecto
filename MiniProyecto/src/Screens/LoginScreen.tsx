@@ -41,7 +41,14 @@ const styles = StyleSheet.create({
     },
     textInput: {
         borderWidth: 1,
-        borderColor: 'gray'
+        borderColor: 'gray',
+        padding: 10,
+        width: '80%',
+        height: 50,
+        marginTop: 20,
+        borderRadius: 30,
+
+
     }
 
 });
