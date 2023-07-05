@@ -48,25 +48,23 @@ export const styles = StyleSheet.create({
         color: '#98a7b0'
     },
     touchContainer: {
-        width: 100,
-        height: 40,
-        backgroundColor: 'red',
         position: 'absolute',
-        marginTop: 85,
-        justifyContent: "center",
-        alignItems: 'center',
-        borderRadius: 20
+        backgroundColor: '#F05454',
+        borderRadius: 30,
+        paddingVertical: 12,
+        paddingHorizontal: 35,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.25,
+        shadowRadius: 5.84,
+        elevation: 5,
+        marginTop: 65
     },
-    touchContainer: {
-        borderRadius: 5,
-        paddingHorizontal: 20,
-        paddingVertical: 10,
-    },
-    buttonText: {
-        color: '#fff',
+    btnTxt: {
         fontSize: 16,
         fontWeight: 'bold',
-        textAlign: 'center',
-    }
+        color: '#FFF',
+        textTransform: 'uppercase',
+    },
 
 });

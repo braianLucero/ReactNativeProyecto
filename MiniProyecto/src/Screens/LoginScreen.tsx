@@ -1,7 +1,6 @@
 import React from 'react';
 import { Text, View, TextInput, Image, TouchableOpacity } from 'react-native';
 import { styles } from '../Theme/Login';
-import LinearGradient from 'react-native-linear-gradient';
 export const LoginScreen = () => {
     return (
         <View style={styles.Container}>
@@ -28,17 +27,14 @@ export const LoginScreen = () => {
             </View>
 
             <View style={{ alignItems: 'center' }}>
-                <TouchableOpacity>
-                    <LinearGradient
-                        colors={['#4c669f', '#3b5998', '#192f6a']}
-                        style={styles.touchContainer}
-                    >
-                        <Text style={styles.buttonText}>SIGN IN</Text>
-                    </LinearGradient>
+                <TouchableOpacity style={styles.touchContainer}>
+                    <Text style={styles.btnTxt}>SIGN IN</Text>
                 </TouchableOpacity>
             </View>
+
 
         </View>
 
     )
 }
+
