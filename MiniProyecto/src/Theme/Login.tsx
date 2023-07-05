@@ -41,5 +41,32 @@ export const styles = StyleSheet.create({
         borderRadius: 5
 
     },
+    ForgPassword: {
+        position: 'absolute',
+        alignSelf: 'center',
+        marginTop: 15,
+        color: '#98a7b0'
+    },
+    touchContainer: {
+        width: 100,
+        height: 40,
+        backgroundColor: 'red',
+        position: 'absolute',
+        marginTop: 85,
+        justifyContent: "center",
+        alignItems: 'center',
+        borderRadius: 20
+    },
+    touchContainer: {
+        borderRadius: 5,
+        paddingHorizontal: 20,
+        paddingVertical: 10,
+    },
+    buttonText: {
+        color: '#fff',
+        fontSize: 16,
+        fontWeight: 'bold',
+        textAlign: 'center',
+    }
 
 });
