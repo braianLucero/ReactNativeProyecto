@@ -32,6 +32,10 @@ export const LoginScreen = () => {
                 </TouchableOpacity>
             </View>
 
+            <Text>
+                Dont have an accout?
+            </Text>
+
 
         </View>
 

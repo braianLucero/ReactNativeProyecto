@@ -4,7 +4,7 @@ export const styles = StyleSheet.create({
     Container: {
         flex: 1,
         width: '100%',
-        backgroundColor: '#f1f1f1',
+        backgroundColor: '#e4e4e4',
         alignSelf: 'center',
         justifyContent: 'center'
     },
@@ -56,9 +56,8 @@ export const styles = StyleSheet.create({
         shadowColor: '#000',
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.25,
-        shadowRadius: 5.84,
         elevation: 5,
-        marginTop: 65
+        marginTop: 65,
     },
     btnTxt: {
         fontSize: 16,
