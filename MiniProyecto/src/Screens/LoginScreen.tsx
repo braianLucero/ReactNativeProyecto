@@ -31,11 +31,7 @@ export const LoginScreen = () => {
                     <Text style={styles.btnTxt}>SIGN IN</Text>
                 </TouchableOpacity>
             </View>
-
-            <Text>
-                Dont have an accout?
-            </Text>
-
+            <Text style={styles.accout}>Dont have an account?</Text>
 
         </View>
 

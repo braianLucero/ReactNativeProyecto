@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
         width: '100%',
         backgroundColor: '#e4e4e4',
         alignSelf: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
     text: {
         fontSize: 80,
@@ -64,6 +64,12 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#FFF',
         textTransform: 'uppercase',
+        marginHorizontal: 16
     },
-
+    accout: {
+        position: 'absolute',
+        bottom: 14,
+        right: 130,
+        color: '#98a7b0'
+    }
 });
