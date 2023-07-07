@@ -15,6 +15,8 @@ export const LoginScreen = () => {
             <TextInput
                 placeholder='Email'
                 style={styles.textInput}
+                keyboardType="email-address"
+
             />
 
             <TextInput
