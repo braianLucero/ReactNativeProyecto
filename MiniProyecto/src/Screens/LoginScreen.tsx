@@ -1,7 +1,10 @@
 import React from 'react';
 import { Text, View, TextInput, Image, TouchableOpacity } from 'react-native';
 import { styles } from '../Theme/Login';
-export const LoginScreen = () => {
+import { StackScreenProps } from '@react-navigation/stack';
+
+interface Props extends StackScreenProps<any, any> { };
+export const LoginScreen = ({ navigation }: Props) => {
     return (
         <View style={styles.Container}>
             <Image
@@ -29,8 +32,11 @@ export const LoginScreen = () => {
             </View>
 
             <View style={{ alignItems: 'center' }}>
-                <TouchableOpacity style={styles.touchContainer}>
-                    <Text style={styles.btnTxt}>SIGN IN</Text>
+                <TouchableOpacity style={styles.touchContainer}
+                    onPress={() => navigation.navigate('PaginaInterior')}>
+                    <Text style={styles.btnTxt}
+
+                    >SIGN IN</Text>
                 </TouchableOpacity>
             </View>
             <Text style={styles.accout}>Dont have an account?</Text>
