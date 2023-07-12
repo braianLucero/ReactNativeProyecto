@@ -1,13 +1,16 @@
 import 'react-native-gesture-handler';
-import React from 'react'
-// import { LoginScreen } from './src/Screens/LoginScreen';
+import React from 'react';
+import { SafeAreaView, StatusBar } from 'react-native';
 import { StackNavigation } from './src/Navigations/StackNavigation';
 
 export const App = () => {
   return (
-
-    <StackNavigation />
-
-  )
-}
+    <>
+      <StatusBar barStyle="dark-content" />
+      <SafeAreaView style={{ flex: 1 }}>
+        <StackNavigation />
+      </SafeAreaView>
+    </>
+  );
+};
 
