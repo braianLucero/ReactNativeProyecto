@@ -1,46 +1,69 @@
 import React from 'react';
-import { View, Image, StyleSheet, ScrollView } from 'react-native';
-
+import { View, Image, StyleSheet, ScrollView, Text } from 'react-native';
+import { styles } from '../Theme/paginaInterior';
 export const PaginaInterior = () => {
+
+    const images = [
+        {
+            source: require('../img/img1.webp'),
+            title: 'Rælingen, Noruega',
+            views: '3.167 visualizaciones del mes pasado',
+            dates: '15 al 20 de oct.',
+            price: '$444 USD',
+            type: 'noche'
+        },
+
+        {
+            source: require('../img/img2.webp'),
+            title: 'Rælingen, Noruega',
+            views: '3.247 visualizaciones del dia anterior ',
+            dates: '19 al 25 de oct.',
+            price: '$200 USD',
+            type: 'noche'
+        },
+
+        {
+            source: require('../img/img3.webp'),
+            title: 'Rælingen, Noruega',
+            views: '1.567  visualizaciones hace una hora',
+            dates: '11 al 17 de oct.',
+            price: '$100 USD',
+            type: 'noche'
+        },
+
+        {
+            source: require('../img/img4.webp'),
+            title: 'Rælingen, Noruega',
+            views: '5.167 visualizaciones hace un mes',
+            dates: '8 al 15 de oct.',
+            price: '$240 USD',
+            type: 'noche'
+        },
+
+        {
+            source: require('../img/img5.webp'),
+            title: 'Rælingen, Noruega',
+            views: '7.167 visualizaciones durante el dia',
+            dates: '2 al 10 de oct.',
+            price: '$55 USD',
+            type: 'noche'
+        },
+    ];
+
     return (
-        // ScrollView  se creará un área de desplazamiento que permitirá desplazarse hacia abajo si el contenido excede el espacio disponible en la pantalla.
         <ScrollView contentContainerStyle={styles.container}>
-            <Image
-                source={require('../img/img1.webp')}
-                style={styles.image}
-            />
-            <Image
-                source={require('../img/img2.webp')}
-                style={styles.image}
-            />
-            <Image
-                source={require('../img/img3.webp')}
-                style={styles.image}
-            />
-            <Image
-                source={require('../img/img4.webp')}
-                style={styles.image}
-            />
-            <Image
-                source={require('../img/img5.webp')}
-                style={styles.image}
-            />
+            {images.map((image, index) => (
+                <View key={index} style={styles.imageContainer}>
+                    <Image source={image.source} style={styles.image} />
+                    <Text style={styles.title}>{image.title}</Text>
+                    <Text style={styles.views}>{image.views}</Text>
+                    <Text style={styles.dates}>{image.dates}</Text>
+                    <Text style={styles.price}>{image.price} {image.type}</Text>
+                </View>
+            ))}
         </ScrollView>
     );
 };
-
-const styles = StyleSheet.create({
-    container: {
-        flexGrow: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    image: {
-        width: 200,
-        height: 200,
-        marginBottom: 10,
-    },
-});
 
 
 
