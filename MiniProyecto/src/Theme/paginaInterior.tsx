@@ -12,25 +12,32 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
     },
     image: {
-        width: 200,
-        height: 200,
+        width: 345,
+        height: 250,
         marginBottom: 10,
+        borderRadius: 10,
     },
     title: {
-        fontSize: 16,
+        fontSize: 18,
         fontWeight: 'bold',
         marginBottom: 5,
+        fontFamily: 'Arial',
     },
     views: {
-        fontSize: 12,
+        fontSize: 14,
         marginBottom: 5,
+        fontStyle: 'italic',
     },
     dates: {
-        fontSize: 12,
+        fontSize: 14,
         marginBottom: 5,
     },
     price: {
-        fontSize: 14,
+        fontSize: 16,
         fontWeight: 'bold',
+        fontFamily: 'Helvetica',
     },
 });
+
+
+
