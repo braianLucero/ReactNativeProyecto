@@ -1,12 +1,15 @@
+import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
+import { StackNavigation } from './StackNavigation';
 
 const Drawer = createDrawerNavigator();
 
-function MyDrawer() {
+export const DrawerNavigation = () => {
     return (
         <Drawer.Navigator>
-            <Drawer.Screen name="Feed" component={Feed} />
-            <Drawer.Screen name="Article" component={Article} />
+            <Drawer.Screen name="StackNavigation" component={StackNavigation} />
         </Drawer.Navigator>
     );
 }
+
+
